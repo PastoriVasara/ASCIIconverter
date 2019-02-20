@@ -129,6 +129,7 @@ public class MainThread
             Writer writer = new FileWriter(myFile);
             bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(ASCIIpicture);
+            bufferedWriter.close();
             //catch any errors
         } catch (IOException e)
         {
